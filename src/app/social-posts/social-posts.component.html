@@ -1,0 +1,16 @@
+<h2>Twhat??</h2>
+
+
+<div *ngFor="let p of posts; index as i">
+    <app-post-form (newPost)="submitPost($event)"></app-post-form>
+    <h2>{{p.title}} </h2>
+    <!-- <app-single-post [showSingle]="posts[i]" (showSingle)="showSingle(i)">Click Here for full post</app-single-post></h4> -->
+    <p>{{p.thought}}</p>
+    <button *ngIf (click)="showSingle(i)">Show Full Post</button>
+    <!-- <app-single-post [onePost]="p"></app-single-post> -->
+    <br>
+    <br>
+</div>
+
+
+<div></div>
